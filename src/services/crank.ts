@@ -16,7 +16,7 @@ import {
   parseDexPool,
   type DiscoveredMarket,
 } from "@percolatorct/sdk";
-import { config, getConnection, getFallbackConnection, loadKeypair, sendWithRetryKeeper, eventBus, createLogger, sendCriticalAlert, getSupabase } from "@percolator/shared";
+import { config, getConnection, getFallbackConnection, loadKeypair, sendWithRetryKeeper, eventBus, createLogger, sendCriticalAlert, getSupabase } from "@percolatorct/shared";
 import { OracleService } from "./oracle.js";
 
 const logger = createLogger("keeper:crank");
