@@ -1,4 +1,4 @@
-import { PublicKey, SYSVAR_CLOCK_PUBKEY, ComputeBudgetProgram } from "@solana/web3.js";
+import { PublicKey, SYSVAR_CLOCK_PUBKEY } from "@solana/web3.js";
 import {
   fetchSlab,
   parseConfig,
