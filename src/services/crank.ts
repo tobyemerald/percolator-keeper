@@ -1331,7 +1331,7 @@ export class CrankService {
           }
         }
       } catch (err) {
-        logger.error("Crank cycle failed", { error: err });
+        logger.error("Crank cycle failed", { error: err instanceof Error ? err.message : String(err), stack: err instanceof Error ? err.stack : undefined });
       } finally {
         this._cycling = false;
         // H4: disarm the watchdog on natural recovery so a transient slow
